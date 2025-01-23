@@ -1,13 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import logo from "./images/logo.svg"
+
 
 function Header()
 {
   return (
-    <header>
-      
+    <header className='navbar'>
+        <a href="#" className="logo"></a>
+        <nav>
+            <ul className="list">
+                <li><a href="#homeId" className="left homeBtn" >Home</a></li>
+                <li><a href="#aboutId" className="left aboutBtn">About</a></li>
+                <li><a href="#contactId" className="left contactBtn">Contact</a></li>
+            </ul>
+        </nav>
     </header>
   )
 }
@@ -15,7 +22,24 @@ function Header()
 function Main()
 {
   return(
-    <h1>sup dude</h1>
+
+    <main>
+      <div className='container'>
+          <div className='smallContainer'>
+            <div className='boxes'></div>
+            <div className='boxes'></div>
+            <div className='boxes'></div>
+            <div className='boxes'></div>
+            <div className='boxes'></div>
+            <div className='boxes'></div>
+            <div className='boxes'></div>
+            <div className='boxes'></div>
+            <div className='boxes'></div>
+            <div className='boxes'></div>
+          </div>
+      </div>
+    </main>
+
   )
 
   let list = []
@@ -28,8 +52,8 @@ function App() {
 
   return (
     <>
-      <Header />
-     <Main   />
+          <Header />
+          <Main   />
      </>
   )
 }
