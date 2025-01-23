@@ -41,6 +41,9 @@ function Main()
     </main>
 
   )
+
+  let list = []
+
 }
 
 
